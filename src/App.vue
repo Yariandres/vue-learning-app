@@ -1,16 +1,17 @@
 <template>
-  <application-header/>
+  <the-header title='RememberMe'></the-header>
   <stored-resources :resources="storedResoucers"/>
 </template>
 
 <script>
 import StoredResources from './components/learning-resources/StoredResources';
-import ApplicationHeader from './components/hearder/ApplicationHeader';
+import TheHeader from './components/layouts/TheHeader'
+
 
 export default {
   components: {
     StoredResources,
-    ApplicationHeader
+    TheHeader
   },
 
   data() {
